@@ -1,0 +1,28 @@
+{
+  "name": "gotran",
+  "version": "0.0.1",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "gotran": "./index.js"
+  },
+  "repository": {
+    "url": "https://github.com/edge/gotran",
+    "type": "git"
+  },
+  "author": "synchronous",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^6.5.0",
+    "loose-json": "^1.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0"
+  },
+  "scripts": {
+	"build": "babel src --out-dir lib",
+	"dev": "babel src --out-dir lib -w"
+  }
+}
